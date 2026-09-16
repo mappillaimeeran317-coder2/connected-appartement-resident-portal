@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index.js" },
+    { "source": "/admin-portal/(.*)", "destination": "/admin-portal/$1" },
+    { "source": "/((?!api/|admin-portal/).*)", "destination": "/public/index.html" }
+  ]
+}

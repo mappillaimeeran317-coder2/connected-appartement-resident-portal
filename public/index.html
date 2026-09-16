@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect Apartment – Premium Apartment Management System for modern living">
+  <title>Connect Apartment – Smart Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <svg viewBox="0 0 24 24" width="40" height="40">
+          <rect x="3" y="10" width="4" height="11" rx="1" fill="#6366f1" />
+          <rect x="8" y="5" width="5" height="16" rx="1" fill="#3b82f6" />
+          <rect x="14" y="8" width="4" height="13" rx="1" fill="#2563eb" />
+          <rect x="19" y="12" width="2" height="9" rx="0.5" fill="#1d4ed8" />
+        </svg>
+      </div>
+      <div class="preloader-text">Connect Apartment</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ============ LOGIN PAGE ============ -->
+  <div id="loginPage" class="page login-page-split">
+    <!-- Left Side: Hero image and branding info -->
+    <div class="login-left">
+      <div class="login-left-bg"></div>
+      <div class="login-left-overlay"></div>
+      <div class="login-left-grid-pattern"></div>
+      <div class="login-left-content">
+        <div class="brand-header">
+          <div class="brand-logo-box">
+            <svg class="logo-svg-spec" viewBox="0 0 24 24" width="24" height="24">
+              <rect x="3" y="10" width="4" height="11" rx="1" fill="#6366f1" />
+              <rect x="8" y="5" width="5" height="16" rx="1" fill="#3b82f6" />
+              <rect x="14" y="8" width="4" height="13" rx="1" fill="#2563eb" />
+              <rect x="19" y="12" width="2" height="9" rx="0.5" fill="#1d4ed8" />
+            </svg>
+          </div>
+          <span class="brand-name">Connect Apartment</span>
+        </div>
+        
+        <div class="hero-text-container">
+          <div class="portal-badge-new">
+            <svg class="badge-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 11l2 2 4-4"/>
+            </svg>
+            <span>RESIDENT PORTAL</span>
+          </div>
+          <h1 class="hero-title">Smart Living,<br><span class="highlight-blue">Simplified.</span></h1>
+          <p class="hero-subtitle">A complete management system for modern apartment communities — secure, fast, and built for residents.</p>
+        </div>
+
+        <!-- Features container card -->
+        <div class="hero-features-card">
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px; height:16px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
+            </div>
+            <div class="feature-text-block">
+              <h4 class="feature-title">Secure & Reliable</h4>
+              <p class="feature-desc">Your data is protected with enterprise-grade security.</p>
+            </div>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px; height:16px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="feature-text-block">
+              <h4 class="feature-title">Fast & Efficient</h4>
+              <p class="feature-desc">Quick access to all essential services and updates.</p>
+            </div>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px; height:16px;"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <div class="feature-text-block">
+              <h4 class="feature-title">Always Support</h4>
+              <p class="feature-desc">Our support team is always here to help you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: White login form panel -->
+    <div class="login-right">
+      <div class="login-right-content">
+        <!-- Theme toggle and header -->
+        <div class="login-right-header-row">
+          <div class="theme-toggle-container">
+            <div class="theme-toggle-pill">
+              <span class="theme-toggle-icon active">☀️</span>
+              <span class="theme-toggle-icon" onclick="showToast('Dark mode for login is coming soon!', 'info')">🌙</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="welcome-heading">Welcome back 👋</h2>
+        <p class="welcome-sub">Sign in to access your dashboard</p>
+
+        <form id="loginForm" class="login-form-new" onsubmit="return false;">
+          <div class="form-group-new">
+            <label for="loginUsername">Username</label>
+            <div class="input-with-icon">
+              <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <input type="text" id="loginUsername" placeholder="meeran" autocomplete="username" required>
+            </div>
+          </div>
+          
+          <div class="form-group-new">
+            <label for="loginPassword">Password</label>
+            <div class="input-with-icon">
+              <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <input type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password" required>
+              <button type="button" class="field-toggle-password" onclick="togglePasswordVisibility()">
+                <span id="eyeIcon">
+                  <svg class="eye-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-actions-row">
+            <label class="remember-me-label">
+              <input type="checkbox" id="rememberMe">
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="forgot-password-link" onclick="showToast('Demo account password reset is disabled.', 'info')">Forgot password?</a>
+          </div>
+
+          <div id="loginError" class="error-message"></div>
+
+          <button type="submit" class="btn-signin" id="loginBtn" onclick="handleLogin()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 6px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span class="btn-text">Sign in</span>
+            <span class="btn-loader"></span>
+          </button>
+        </form>
+
+        <!-- Social Sign-in row -->
+        <div class="divider-text">
+          <span>or continue with</span>
+        </div>
+
+        <div class="social-login-row">
+          <button class="social-btn" onclick="showToast('Social login is disabled for the demo.', 'info')">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            <span>Google</span>
+          </button>
+          <button class="social-btn" onclick="showToast('Social login is disabled for the demo.', 'info')">
+            <svg viewBox="0 0 23 23" width="16" height="16">
+              <rect x="0" y="0" width="11" height="11" fill="#F25022"/>
+              <rect x="12" y="0" width="11" height="11" fill="#7FBA00"/>
+              <rect x="0" y="12" width="11" height="11" fill="#00A4EF"/>
+              <rect x="12" y="12" width="11" height="11" fill="#FFB900"/>
+            </svg>
+            <span>Microsoft</span>
+          </button>
+          <button class="social-btn" onclick="showToast('Social login is disabled for the demo.', 'info')">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.22.67-2.94 1.51-.62.71-1.16 1.85-1.01 2.96 1.12.09 2.27-.6 2.96-1.41z"/>
+            </svg>
+            <span>Apple</span>
+          </button>
+        </div>
+
+        <!-- Don't have an account signup banner -->
+        <div class="signup-banner-new">
+          Don't have an account? <a href="#" onclick="showToast('Please contact your community administration office to request an account.', 'info')">Sign up</a>
+        </div>
+
+        <!-- Demo prefill section -->
+        <div class="demo-pills-container-new">
+          <div class="demo-header-new">🔑 Quick Demo Sign-In:</div>
+          <div class="demo-pills-new">
+            <button type="button" class="demo-pill-new" onclick="prefillLogin('meeran', 'mappi1037')">Meeran (Resident)</button>
+            <button type="button" class="demo-pill-new" onclick="prefillLogin('jeeva', 'jeeva@123')">Jeeva (Resident)</button>
+            <button type="button" class="demo-pill-new admin-pill-new" onclick="prefillLogin('admin', 'admin@123')">Admin (Manager)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MAIN APP SHELL ============ -->
+  <div id="appShell" class="app-shell hidden">
+    <!-- Animated background orbs (matches login page) -->
+    <div class="app-bg-orbs" aria-hidden="true">
+      <div class="app-orb app-orb-1"></div>
+      <div class="app-orb app-orb-2"></div>
+      <div class="app-orb app-orb-3"></div>
+    </div>
+    <!-- Top Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-left">
+        <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">☰</button>
+        <div class="navbar-brand">
+          <div class="brand-logo-box navbar-logo-box">
+            <svg class="logo-svg-spec" viewBox="0 0 24 24" width="20" height="20">
+              <rect x="3" y="10" width="4" height="11" rx="1" fill="#6366f1" />
+              <rect x="8" y="5" width="5" height="16" rx="1" fill="#3b82f6" />
+              <rect x="14" y="8" width="4" height="13" rx="1" fill="#2563eb" />
+              <rect x="19" y="12" width="2" height="9" rx="0.5" fill="#1d4ed8" />
+            </svg>
+          </div>
+          <span class="navbar-title">Connect Apartment</span>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="navbar-notifications" id="notifBtn" onclick="toggleNotifications()">
+          <span class="notif-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </span>
+          <span class="notif-badge" id="notifBadge">3</span>
+        </div>
+        <div class="navbar-user" id="navbarUser" onclick="toggleUserMenu()">
+          <div class="user-avatar" id="navAvatar">M</div>
+          <span class="user-name" id="navUserName">User</span>
+          <span class="user-chevron">▾</span>
+        </div>
+      </div>
+      <!-- Notifications Dropdown -->
+      <div class="notifications-dropdown hidden" id="notificationsDropdown">
+        <div class="notif-header">
+          <h3>Notifications</h3>
+        </div>
+        <div class="notif-list" id="notifList"></div>
+      </div>
+      <!-- User Menu Dropdown -->
+      <div class="user-menu-dropdown hidden" id="userMenuDropdown">
+        <div class="user-menu-header">
+          <div class="user-avatar-lg" id="menuAvatar">M</div>
+          <div>
+            <div class="user-menu-name" id="menuUserName">User</div>
+            <div class="user-menu-flat" id="menuUserFlat">Flat 000</div>
+          </div>
+        </div>
+        <div class="user-menu-divider"></div>
+        <button class="user-menu-item" onclick="handleLogout()">
+          <span>🚪</span> Sign Out
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-page="dashboard" onclick="navigateTo('dashboard')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+          </span>
+          <span class="nav-label">Dashboard</span>
+        </button>
+        <button class="nav-item" data-page="facilities" onclick="navigateTo('facilities')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </span>
+          <span class="nav-label">Facilities</span>
+        </button>
+        <button class="nav-item" data-page="billing" onclick="navigateTo('billing')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+          </span>
+          <span class="nav-label">Bills & Payments</span>
+        </button>
+        <button class="nav-item" data-page="maintenance" onclick="navigateTo('maintenance')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </span>
+          <span class="nav-label">Maintenance</span>
+        </button>
+        <button class="nav-item" data-page="emergency" onclick="navigateTo('emergency')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </span>
+          <span class="nav-label">Emergency</span>
+        </button>
+        <button class="nav-item" data-page="parking" onclick="navigateTo('parking')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M9 16V8h3a3 3 0 0 1 0 6H9"/></svg>
+          </span>
+          <span class="nav-label">Parking</span>
+        </button>
+        <button class="nav-item" data-page="child-safety" onclick="navigateTo('child-safety')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <span class="nav-label">Child Safety</span>
+        </button>
+        <button class="nav-item" data-page="community" onclick="navigateTo('community')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </span>
+          <span class="nav-label">Skill Sharing</span>
+        </button>
+        <button class="nav-item" data-page="events" onclick="navigateTo('events')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+          </span>
+          <span class="nav-label">Events & Notices</span>
+        </button>
+        <button class="nav-item" data-page="visitor" onclick="navigateTo('visitor')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg>
+          </span>
+          <span class="nav-label">Visitor & Delivery</span>
+        </button>
+        <button class="nav-item" data-page="ai-help" onclick="navigateTo('ai-help')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path></svg>
+          </span>
+          <span class="nav-label">AI & Navigation</span>
+        </button>
+        <button class="nav-item" data-page="chat" onclick="navigateTo('chat')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </span>
+          <span class="nav-label">Chat System</span>
+        </button>
+        <button class="nav-item" data-page="history" onclick="navigateTo('history')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </span>
+          <span class="nav-label">History & Reports</span>
+        </button>
+        <button class="nav-item hidden" id="navAdminBtn" data-page="admin" onclick="navigateTo('admin')">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8M5 22v-4M19 22v-9"></path></svg>
+          </span>
+          <span class="nav-label">Admin Dash</span>
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <p>© 2026 Connect Apartment</p>
+      </div>
+    </aside>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay hidden" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="mainContent">
+      
+      <!-- DASHBOARD -->
+      <section class="page-section" id="page-dashboard">
+        <!-- Hero Greeting -->
+        <div class="dash-hero">
+          <div class="dash-hero-left">
+            <div class="dash-greeting-badge" id="dashGreetingBadge">
+              <span class="greeting-emoji" id="greetingEmoji">☀️</span>
+              <span id="greetingTimeLabel">Good Morning</span>
+            </div>
+            <h1 class="dash-hero-title">Welcome back, <span id="dashUserName" class="dash-name-highlight">User</span></h1>
+            <p class="dash-hero-subtitle">Here's what's happening in your apartment today</p>
+            <div class="dash-date-display" id="dashDateDisplay"></div>
+          </div>
+          <div class="dash-hero-right">
+            <div class="dash-weather-widget">
+              <div class="weather-icon-anim">🌤️</div>
+              <div class="weather-info">
+                <div class="weather-temp">28°C</div>
+                <div class="weather-desc">Partly Cloudy</div>
+                <div class="weather-loc">Chennai, IN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Stats Cards -->
+        <div class="stats-grid-v2" id="statsGrid">
+          <div class="stat-card-v2 stat-v2-blue" style="--delay: 0">
+            <div class="stat-ring-container">
+              <svg class="stat-ring" viewBox="0 0 80 80">
+                <circle class="stat-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="stat-ring-fill stat-ring-blue" cx="40" cy="40" r="34" id="ringBookings" />
+              </svg>
+              <div class="stat-ring-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+            </div>
+            <div class="stat-info-v2">
+              <div class="stat-value-v2" id="statBookings" data-target="0">0</div>
+              <div class="stat-label-v2">My Bookings</div>
+              <div class="stat-trend stat-trend-up"><span>▲</span> Active</div>
+            </div>
+          </div>
+
+          <div class="stat-card-v2 stat-v2-amber" style="--delay: 1">
+            <div class="stat-ring-container">
+              <svg class="stat-ring" viewBox="0 0 80 80">
+                <circle class="stat-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="stat-ring-fill stat-ring-amber" cx="40" cy="40" r="34" id="ringTickets" />
+              </svg>
+              <div class="stat-ring-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+            </div>
+            <div class="stat-info-v2">
+              <div class="stat-value-v2" id="statTickets" data-target="0">0</div>
+              <div class="stat-label-v2">Active Tickets</div>
+              <div class="stat-trend stat-trend-warn"><span>⚡</span> In Progress</div>
+            </div>
+          </div>
+
+          <div class="stat-card-v2 stat-v2-rose" style="--delay: 2">
+            <div class="stat-ring-container">
+              <svg class="stat-ring" viewBox="0 0 80 80">
+                <circle class="stat-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="stat-ring-fill stat-ring-rose" cx="40" cy="40" r="34" id="ringBills" />
+              </svg>
+              <div class="stat-ring-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+            </div>
+            <div class="stat-info-v2">
+              <div class="stat-value-v2" id="statPendingBills" data-target="0">0</div>
+              <div class="stat-label-v2">Pending Bills</div>
+              <div class="stat-trend stat-trend-danger"><span>⏳</span> Due Soon</div>
+            </div>
+          </div>
+
+          <div class="stat-card-v2 stat-v2-emerald" style="--delay: 3">
+            <div class="stat-ring-container">
+              <svg class="stat-ring" viewBox="0 0 80 80">
+                <circle class="stat-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="stat-ring-fill stat-ring-emerald" cx="40" cy="40" r="34" id="ringAmount" />
+              </svg>
+              <div class="stat-ring-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+            </div>
+            <div class="stat-info-v2">
+              <div class="stat-value-v2" id="statPendingAmount" data-target="0">₹0</div>
+              <div class="stat-label-v2">Total Pending</div>
+              <div class="stat-trend stat-trend-up"><span>₹</span> Amount</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions — Redesigned -->
+        <div class="section-header-v2">
+          <h2>⚡ Quick Actions</h2>
+          <p class="section-sub">Jump to any service instantly</p>
+        </div>
+        <div class="quick-actions-v2">
+          <button class="action-card-v2" onclick="navigateTo('facilities')" style="--accent-hue: 217">
+            <div class="action-icon-v2">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <span class="action-label-v2">Book Facility</span>
+            <span class="action-arrow-v2">→</span>
+          </button>
+          <button class="action-card-v2" onclick="navigateTo('billing')" style="--accent-hue: 45">
+            <div class="action-icon-v2">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <span class="action-label-v2">Pay Bills</span>
+            <span class="action-arrow-v2">→</span>
+          </button>
+          <button class="action-card-v2" onclick="navigateTo('maintenance')" style="--accent-hue: 0">
+            <div class="action-icon-v2">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <span class="action-label-v2">Raise Ticket</span>
+            <span class="action-arrow-v2">→</span>
+          </button>
+          <button class="action-card-v2" onclick="navigateTo('emergency')" style="--accent-hue: 270">
+            <div class="action-icon-v2">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <span class="action-label-v2">Emergency</span>
+            <span class="action-arrow-v2">→</span>
+          </button>
+          <button class="action-card-v2" onclick="navigateTo('parking')" style="--accent-hue: 145">
+            <div class="action-icon-v2">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 16V8h3a3 3 0 0 1 0 6H9"/></svg>
+            </div>
+            <span class="action-label-v2">Parking</span>
+            <span class="action-arrow-v2">→</span>
+          </button>
+          <button class="action-card-v2" onclick="navigateTo('chat')" style="--accent-hue: 200">
+            <div class="action-icon-v2">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span class="action-label-v2">Community Chat</span>
+            <span class="action-arrow-v2">→</span>
+          </button>
+        </div>
+
+        <!-- Two-Column: Activity Feed + Upcoming Events -->
+        <div class="dash-two-col">
+          <!-- Recent Activity Feed -->
+          <div class="dash-panel">
+            <div class="dash-panel-header">
+              <h2>📋 Recent Activity</h2>
+              <button class="dash-panel-link" onclick="navigateTo('history')">View All →</button>
+            </div>
+            <div class="activity-feed" id="activityFeed">
+              <div class="activity-empty">
+                <div class="activity-empty-icon">📭</div>
+                <p>No recent activity. Start by booking a facility!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Events -->
+          <div class="dash-panel">
+            <div class="dash-panel-header">
+              <h2>🗓️ Upcoming Events</h2>
+              <button class="dash-panel-link" onclick="navigateTo('events')">View All →</button>
+            </div>
+            <div class="upcoming-events" id="dashUpcomingEvents">
+              <div class="activity-empty">
+                <div class="activity-empty-icon">🎉</div>
+                <p>Loading events...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Announcements — Redesigned -->
+        <div class="section-header-v2">
+          <h2>📢 Announcements</h2>
+          <p class="section-sub">Latest updates from management</p>
+        </div>
+        <div id="announcementsList" class="announcements-list-v2"></div>
+
+        <!-- Simulated Phone Notification UI -->
+        <div class="phone-simulation-container hidden" id="phoneSimulation">
+          <div class="phone-sim-hardware">
+            <div class="phone-sim-notch"></div>
+            <div class="phone-sim-screen">
+              <div class="phone-sim-header">
+                <span class="phone-time" id="phoneSimTime">12:34</span>
+                <span class="phone-icons">📶 🔋</span>
+              </div>
+              <div class="phone-notification">
+                <div class="notif-header">
+                  <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2322c55e'><path d='M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z'/></svg>" class="notif-icon" />
+                  <span class="notif-app">Messages</span>
+                  <span class="notif-time">now</span>
+                </div>
+                <div class="notif-body">
+                  <strong>Connect Apt</strong>
+                  <p id="phoneSimMessage">Connect Apartment: Maintenance Ticket TKT-XXXXX raised by Meeran (Flat 105-I). Category: Plumbing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- FACILITIES -->
+      <section class="page-section hidden" id="page-facilities">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Facility Booking</h1>
+            <p class="page-subtitle">Reserve amenities and spaces</p>
+          </div>
+        </div>
+        <div class="facilities-grid" id="facilitiesGrid"></div>
+
+        <!-- Facility Modal -->
+        <div class="modal hidden" id="facilityModal">
+          <div class="modal-overlay" onclick="closeModal('facilityModal')"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 id="facilityModalTitle">Book Facility</h2>
+              <button class="modal-close" onclick="closeModal('facilityModal')">✕</button>
+            </div>
+            <div class="modal-body">
+              <p class="facility-desc" id="facilityModalDesc"></p>
+              <div class="form-group">
+                <label>Select Date</label>
+                <input type="date" id="facilityDate" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Available Slots</label>
+                <div id="slotsContainer" class="slots-grid"></div>
+              </div>
+              <div class="form-group">
+                <label>Amount</label>
+                <div class="price-display" id="facilityPrice">₹0</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" onclick="closeModal('facilityModal')">Cancel</button>
+              <button class="btn btn-primary" id="bookFacilityBtn" onclick="initiateBookingPayment()">Proceed to Pay 💳</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Bookings -->
+        <div class="section-header" style="margin-top:2rem;">
+          <h2>My Bookings</h2>
+        </div>
+        <div id="bookingsList" class="bookings-list"></div>
+      </section>
+
+      <!-- BILLING -->
+      <section class="page-section hidden" id="page-billing">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Bills & Payments</h1>
+            <p class="page-subtitle">Manage your rent, utilities and other charges</p>
+          </div>
+        </div>
+        <div class="billing-grid" id="billingGrid"></div>
+
+        <!-- Payment Modal -->
+        <div class="modal hidden" id="paymentModal">
+          <div class="modal-overlay" onclick="closeModal('paymentModal')"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 id="paymentModalTitle">Make Payment</h2>
+              <button class="modal-close" onclick="closeModal('paymentModal')">✕</button>
+            </div>
+            <div class="modal-body">
+              <div class="payment-summary">
+                <div class="payment-amount" id="paymentAmount">₹0</div>
+                <div class="payment-due" id="paymentDue">Due: --</div>
+              </div>
+              <div class="form-group">
+                <label>Payment Method</label>
+                <div class="payment-methods">
+                  <label class="payment-method">
+                    <input type="radio" name="payMethod" value="UPI" checked>
+                    <div class="method-card">
+                      <span class="method-icon">📱</span>
+                      <span>UPI</span>
+                    </div>
+                  </label>
+                  <label class="payment-method">
+                    <input type="radio" name="payMethod" value="Card">
+                    <div class="method-card">
+                      <span class="method-icon">💳</span>
+                      <span>Card</span>
+                    </div>
+                  </label>
+                  <label class="payment-method">
+                    <input type="radio" name="payMethod" value="Net Banking">
+                    <div class="method-card">
+                      <span class="method-icon">🏦</span>
+                      <span>Net Banking</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" onclick="closeModal('paymentModal')">Cancel</button>
+              <button class="btn btn-primary" id="confirmPayBtn" onclick="confirmPayment()">Pay Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment History -->
+        <div class="section-header" style="margin-top:2rem;">
+          <h2>Payment History</h2>
+        </div>
+        <div id="paymentHistory" class="payment-history"></div>
+      </section>
+
+      <!-- MAINTENANCE -->
+      <section class="page-section hidden" id="page-maintenance">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Maintenance & Support</h1>
+            <p class="page-subtitle">Report issues and track resolutions</p>
+          </div>
+          <button class="btn btn-primary" onclick="openNewTicketModal()">+ New Ticket</button>
+        </div>
+        <div class="maintenance-categories" id="maintenanceCategories"></div>
+
+        <!-- New Ticket Modal -->
+        <div class="modal hidden" id="ticketModal">
+          <div class="modal-overlay" onclick="closeModal('ticketModal')"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 id="ticketModalTitle">Raise Maintenance Ticket</h2>
+              <button class="modal-close" onclick="closeModal('ticketModal')">✕</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Category</label>
+                <select id="ticketCategory" class="form-input">
+                  <option value="">Select category</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Priority</label>
+                <div class="priority-selector">
+                  <label class="priority-option">
+                    <input type="radio" name="ticketPriority" value="low">
+                    <span class="priority-badge priority-low">Low</span>
+                  </label>
+                  <label class="priority-option">
+                    <input type="radio" name="ticketPriority" value="medium" checked>
+                    <span class="priority-badge priority-medium">Medium</span>
+                  </label>
+                  <label class="priority-option">
+                    <input type="radio" name="ticketPriority" value="high">
+                    <span class="priority-badge priority-high">High</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Description</label>
+                <textarea id="ticketDescription" class="form-input" rows="4" placeholder="Describe the issue in detail..."></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" onclick="closeModal('ticketModal')">Cancel</button>
+              <button class="btn btn-primary" onclick="submitMaintenanceTicket()">Submit Ticket</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Tickets -->
+        <div class="section-header" style="margin-top:2rem;">
+          <h2>My Tickets</h2>
+        </div>
+        <div id="ticketsList" class="tickets-list"></div>
+      </section>
+
+      <!-- EMERGENCY -->
+      <section class="page-section hidden" id="page-emergency">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Emergency Services</h1>
+            <p class="page-subtitle">Quick access to emergency contacts and alerts</p>
+          </div>
+        </div>
+        <div class="emergency-alert-banner">
+          <span class="alert-pulse"></span>
+          <span>In case of emergency, press the panic button or call the numbers below</span>
+        </div>
+        <div class="emergency-grid" id="emergencyGrid"></div>
+
+        <!-- Panic Button -->
+        <div class="panic-section">
+          <button class="panic-button" id="panicBtn" onclick="triggerPanic()">
+            <span class="panic-icon">🚨</span>
+            <span class="panic-text">PANIC BUTTON</span>
+            <span class="panic-sub">Press & Hold for Emergency Alert</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- PARKING -->
+      <section class="page-section hidden" id="page-parking">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Parking Management</h1>
+            <p class="page-subtitle">View and manage parking slots</p>
+          </div>
+        </div>
+        <div class="parking-legend">
+          <span class="legend-item"><span class="legend-dot available"></span> Available</span>
+          <span class="legend-item"><span class="legend-dot occupied"></span> Occupied</span>
+          <span class="legend-item"><span class="legend-dot reserved"></span> Reserved</span>
+        </div>
+        <div class="parking-grid" id="parkingGrid"></div>
+
+        <!-- Parking Modal -->
+        <div class="modal hidden" id="parkingModal">
+          <div class="modal-overlay" onclick="closeModal('parkingModal')"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Book Parking Slot</h2>
+              <button class="modal-close" onclick="closeModal('parkingModal')">✕</button>
+            </div>
+            <div class="modal-body">
+              <p>Slot: <strong id="parkingSlotName">-</strong></p>
+              <p>Type: <strong id="parkingSlotType">-</strong></p>
+              <div class="form-group">
+                <label>Vehicle Number</label>
+                <input type="text" id="vehicleNumber" class="form-input" placeholder="e.g. TN 01 AB 1234">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" onclick="closeModal('parkingModal')">Cancel</button>
+              <button class="btn btn-primary" onclick="confirmParkingBooking()">Book Slot</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHILD SAFETY -->
+      <section class="page-section hidden" id="page-child-safety">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Child Safety System</h1>
+            <p class="page-subtitle">Track and ensure the safety of your children</p>
+          </div>
+        </div>
+        <div class="child-safety-container">
+          <div class="status-card safe" id="childStatusCard">
+            <div class="status-icon" id="childStatusIcon">🛡️</div>
+            <h2 id="childStatusText">Status: SAFE</h2>
+            <p>Your child is currently marked as safe within the premises.</p>
+            <button class="btn btn-primary" onclick="markChildMissing()" style="margin-top: 16px; background: var(--danger); border: none; color: white; width: 100%; max-width: 300px; padding: 16px;">🚨 Mark as MISSING (Alert Neighbors)</button>
+          </div>
+          <div class="guardian-section" style="margin-top: 24px;">
+            <h3>Guardian Contacts</h3>
+            <div class="guardian-list" id="guardianList">
+              <div class="guardian-card">
+                <div><strong>Primary Guardian</strong><br>Contact: +91 9876543210</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMUNITY SKILLS -->
+      <section class="page-section hidden" id="page-community">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Neighbor Skill Sharing</h1>
+            <p class="page-subtitle">Find help or offer your skills to the community</p>
+          </div>
+          <button class="btn btn-primary" onclick="openModal('addSkillModal')">+ Add My Skill</button>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+
+        <!-- Add Skill Modal -->
+        <div class="modal hidden" id="addSkillModal">
+          <div class="modal-overlay" onclick="closeModal('addSkillModal')"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Add Your Skill</h2>
+              <button class="modal-close" onclick="closeModal('addSkillModal')">✕</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Skill / Profession</label>
+                <select id="skillType" class="form-input">
+                  <option value="Doctor 👨‍⚕️">Doctor 👨‍⚕️</option>
+                  <option value="Electrician ⚡">Electrician ⚡</option>
+                  <option value="Tutor 📚">Tutor 📚</option>
+                  <option value="Plumber 🔧">Plumber 🔧</option>
+                  <option value="Chef 🍳">Chef 🍳</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-top:16px;">
+                <label>Description</label>
+                <input type="text" id="skillDesc" class="form-input" placeholder="e.g. Available for emergency consultation">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" onclick="closeModal('addSkillModal')">Cancel</button>
+              <button class="btn btn-primary" onclick="submitSkill()">Add Skill</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS & NOTICES -->
+      <section class="page-section hidden" id="page-events">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Events & Notices</h1>
+            <p class="page-subtitle">Community gatherings, festivals, and important notices</p>
+          </div>
+        </div>
+        <div class="events-list" id="eventsList"></div>
+      </section>
+
+      <!-- ADMIN DASHBOARD -->
+      <section class="page-section hidden" id="page-admin">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Admin Dashboard</h1>
+            <p class="page-subtitle">Overview of apartment management</p>
+          </div>
+        </div>
+        
+        <div class="stats-grid" style="margin-bottom: 24px;">
+          <div class="stat-card stat-blue">
+            <div class="stat-icon">👥</div>
+            <div class="stat-info">
+              <div class="stat-value" id="adminTotalUsers">0</div>
+              <div class="stat-label">Total Residents</div>
+            </div>
+          </div>
+          <div class="stat-card stat-orange">
+            <div class="stat-icon">🔧</div>
+            <div class="stat-info">
+              <div class="stat-value" id="adminTotalComplaints">0</div>
+              <div class="stat-label">Total Complaints</div>
+            </div>
+          </div>
+          <div class="stat-card stat-green">
+            <div class="stat-icon">💰</div>
+            <div class="stat-info">
+              <div class="stat-value" id="adminTotalPayments">₹0</div>
+              <div class="stat-label">Payments Received</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-sections-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div class="admin-panel-card">
+            <h3>Recent Complaints</h3>
+            <div id="adminComplaintsList" class="admin-list-container"></div>
+          </div>
+          <div class="admin-panel-card">
+            <h3>Recent Payments</h3>
+            <div id="adminPaymentsList" class="admin-list-container"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISITOR & DELIVERY -->
+      <section class="page-section hidden" id="page-visitor">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Visitor & Delivery Management</h1>
+            <p class="page-subtitle">Pre-approve guests and track your couriers</p>
+          </div>
+          <button class="btn btn-primary" onclick="openModal('visitorModal')">+ Pre-Approve Visitor</button>
+        </div>
+        <div class="visitor-list" id="visitorList"></div>
+
+        <div class="modal hidden" id="visitorModal">
+          <div class="modal-overlay" onclick="closeModal('visitorModal')"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Pre-Approve Visitor</h2>
+              <button class="modal-close" onclick="closeModal('visitorModal')">✕</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Visitor Name</label>
+                <input type="text" id="visitorName" class="form-input" placeholder="e.g. Ramesh / Amazon Delivery">
+              </div>
+              <div class="form-group" style="margin-top: 16px;">
+                <label>Type</label>
+                <select id="visitorType" class="form-input">
+                  <option value="Guest">Guest 👤</option>
+                  <option value="Delivery">Delivery / Courier 📦</option>
+                  <option value="Service">Service / Maid 🧹</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" onclick="closeModal('visitorModal')">Cancel</button>
+              <button class="btn btn-primary" onclick="submitVisitor()">Approve</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI & NAVIGATION -->
+      <section class="page-section hidden" id="page-ai-help">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">AI Assistant & Smart Navigation</h1>
+            <p class="page-subtitle">Get smart suggestions and find places inside the apartment</p>
+          </div>
+        </div>
+        
+        <div class="ai-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <!-- AI Suggestions -->
+          <div class="ai-card">
+            <h3>🧠 AI Smart Suggestions</h3>
+            <p style="font-size:13px; color:var(--text-secondary); margin-bottom:16px;">Describe your issue and I will tell you who to contact or what to do.</p>
+            <div class="form-group">
+              <input type="text" id="aiInput" class="form-input" placeholder="e.g. 'Water is leaking' or 'Fire'">
+            </div>
+            <button class="btn btn-primary" onclick="getAiSuggestion()" style="margin-top:12px; width:100%;">Ask AI</button>
+            <div id="aiResult" class="ai-result-box hidden"></div>
+          </div>
+
+          <!-- Smart Navigation -->
+          <div class="ai-card">
+            <h3>🧭 Smart Navigation</h3>
+            <p style="font-size:13px; color:var(--text-secondary); margin-bottom:16px;">Find exactly where a facility or block is located.</p>
+            <div class="form-group">
+              <input type="text" id="navInput" class="form-input" placeholder="e.g. 'Swimming Pool' or 'Gym'">
+            </div>
+            <button class="btn btn-primary" onclick="getNavigation()" style="margin-top:12px; width:100%;">Find Location</button>
+            <div id="navResult" class="ai-result-box hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAT SYSTEM -->
+      <section class="page-section hidden" id="page-chat">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Community Chat</h1>
+            <p class="page-subtitle">Communicate with maintenance or neighbors</p>
+          </div>
+        </div>
+        <div class="chat-container">
+          <div class="chat-sidebar">
+            <div class="chat-contact active">🛠️ Maintenance Team</div>
+            <div class="chat-contact">🛡️ Security Gate</div>
+            <div class="chat-contact">🏢 Admin Office</div>
+          </div>
+          <div class="chat-main">
+            <div class="chat-messages" id="chatMessages">
+              <div class="chat-msg received">Hello! How can we help you today?</div>
+            </div>
+            <div class="chat-input-area">
+              <input type="text" id="chatInput" class="form-input" placeholder="Type a message...">
+              <button class="btn btn-primary" onclick="sendChatMessage()">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORY & REPORTS -->
+      <section class="page-section hidden" id="page-history">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">History & Reports</h1>
+            <p class="page-subtitle">Your entire activity record in one place</p>
+          </div>
+        </div>
+        <div class="history-tabs">
+          <button class="history-tab active" onclick="switchHistoryTab('bookings')">Bookings</button>
+          <button class="history-tab" onclick="switchHistoryTab('payments')">Payments</button>
+          <button class="history-tab" onclick="switchHistoryTab('complaints')">Complaints</button>
+        </div>
+        <div class="history-content" id="historyContentArea">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Success Animation Overlay -->
+  <div id="successOverlay" class="success-overlay hidden">
+    <div class="success-content">
+      <div class="success-check">✓</div>
+      <div class="success-text" id="successText">Success!</div>
+    </div>
+  </div>
+
+  <!-- ============ UPI PAYMENT MODAL ============ -->
+  <div class="modal hidden" id="upiPaymentModal">
+    <div class="modal-overlay" onclick="closeUpiModal()"></div>
+    <div class="modal-content upi-modal-content">
+
+      <!-- STEP 1: Choose Payment Method -->
+      <div id="upiStep1">
+        <div class="modal-header upi-header">
+          <div class="upi-header-info">
+            <h2 id="upiModalTitle">Complete Payment</h2>
+            <div class="upi-order-badge">Order #<span id="upiOrderId"></span></div>
+          </div>
+          <button class="modal-close" onclick="closeUpiModal()">✕</button>
+        </div>
+        <div class="modal-body">
+          <!-- Amount Banner -->
+          <div class="upi-amount-banner">
+            <div class="upi-amount-label">Total Amount</div>
+            <div class="upi-amount-value" id="upiAmountDisplay">₹0</div>
+            <div class="upi-secure-badge">🔒 100% Secure Payment</div>
+          </div>
+
+          <!-- UPI Apps -->
+          <div class="upi-section-label">Pay instantly with UPI apps</div>
+          <div class="upi-apps-grid">
+            <button class="upi-app-btn" id="gpayBtn" onclick="selectUpiApp('gpay')">
+              <div class="upi-app-logo gpay-logo">G</div>
+              <span>Google Pay</span>
+            </button>
+            <button class="upi-app-btn" id="phonpeBtn" onclick="selectUpiApp('phonepe')">
+              <div class="upi-app-logo phonepe-logo">Ph</div>
+              <span>PhonePe</span>
+            </button>
+            <button class="upi-app-btn" id="paytmBtn" onclick="selectUpiApp('paytm')">
+              <div class="upi-app-logo paytm-logo">P</div>
+              <span>Paytm</span>
+            </button>
+            <button class="upi-app-btn" id="bhimBtn" onclick="selectUpiApp('bhim')">
+              <div class="upi-app-logo bhim-logo">B</div>
+              <span>BHIM UPI</span>
+            </button>
+          </div>
+
+          <div class="upi-divider"><span>or scan QR code</span></div>
+
+          <!-- QR Code -->
+          <div class="qr-section">
+            <div class="qr-code-wrapper">
+              <div class="qr-code" id="qrCodeDisplay">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="200" fill="white"/>
+                  <rect x="10" y="10" width="50" height="50" fill="none" stroke="#1a1a2e" stroke-width="7"/>
+                  <rect x="22" y="22" width="26" height="26" fill="#1a1a2e"/>
+                  <rect x="140" y="10" width="50" height="50" fill="none" stroke="#1a1a2e" stroke-width="7"/>
+                  <rect x="152" y="22" width="26" height="26" fill="#1a1a2e"/>
+                  <rect x="10" y="140" width="50" height="50" fill="none" stroke="#1a1a2e" stroke-width="7"/>
+                  <rect x="22" y="152" width="26" height="26" fill="#1a1a2e"/>
+                  <rect x="80" y="10" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="95" y="10" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="110" y="10" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="125" y="10" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="80" y="25" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="110" y="25" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="95" y="40" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="125" y="40" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="80" y="55" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="10" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="25" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="55" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="80" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="110" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="155" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="182" y="80" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="10" y="95" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="40" y="95" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="80" y="95" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="110" y="95" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="140" y="95" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="170" y="95" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="55" y="110" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="95" y="110" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="125" y="110" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="182" y="110" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="80" y="125" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="110" y="125" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="140" y="125" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="95" y="140" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="125" y="140" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="155" y="140" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="80" y="155" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="110" y="155" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="170" y="155" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="95" y="170" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="155" y="170" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="182" y="170" width="8" height="8" fill="#1a1a2e"/>
+                  <rect x="82" y="82" width="36" height="36" rx="4" fill="white" stroke="#6c63ff" stroke-width="2"/>
+                  <text x="100" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#6c63ff">UPI</text>
+                </svg>
+              </div>
+              <div class="qr-upi-id">connect@apartment.upi</div>
+              <div class="qr-expiry">QR expires in <span id="qrTimer">05:00</span></div>
+            </div>
+          </div>
+
+          <!-- UPI ID Manual Entry -->
+          <div class="upi-manual-section">
+            <div class="upi-section-label">Enter UPI ID manually</div>
+            <div class="upi-id-input-wrapper">
+              <input type="text" id="upiIdInput" class="form-input upi-id-input" placeholder="yourname@upi or @gpay">
+              <button class="btn btn-primary upi-verify-btn" onclick="verifyAndPay()">Pay Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: Processing -->
+      <div id="upiStep2" class="hidden">
+        <div class="upi-processing-screen">
+          <div class="processing-app-logo" id="processingAppLogo">G</div>
+          <div class="processing-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring ring2"></div>
+          </div>
+          <div class="processing-title">Processing Payment</div>
+          <div class="processing-subtitle" id="processingSubtitle">Connecting to Google Pay...</div>
+          <div class="processing-amount" id="processingAmount">₹0</div>
+          <div class="processing-steps">
+            <div class="proc-step active" id="procStep1"><span class="proc-dot"></span> Initiating payment request</div>
+            <div class="proc-step pending" id="procStep2"><span class="proc-dot"></span> Authenticating with bank</div>
+            <div class="proc-step pending" id="procStep3"><span class="proc-dot"></span> Confirming transaction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: Success -->
+      <div id="upiStep3" class="hidden">
+        <div class="upi-success-screen">
+          <div class="upi-success-circle">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="#00c853" stroke-width="6" class="success-circle-ring"/>
+              <polyline points="28,52 44,68 72,36" fill="none" stroke="#00c853" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" class="success-check-draw"/>
+            </svg>
+          </div>
+          <div class="upi-success-title">Payment Successful!</div>
+          <div class="upi-success-amount" id="upiSuccessAmount">₹0</div>
+          <div class="upi-receipt-card">
+            <div class="receipt-row"><span>Transaction ID</span><strong id="receiptTxnId">-</strong></div>
+            <div class="receipt-row"><span>Payment Method</span><strong id="receiptMethod">-</strong></div>
+            <div class="receipt-row"><span>Date &amp; Time</span><strong id="receiptDateTime">-</strong></div>
+            <div class="receipt-row"><span>Status</span><strong class="receipt-success-badge">✓ SUCCESS</strong></div>
+          </div>
+          <button class="btn btn-primary upi-done-btn" onclick="finalizeAfterPayment()">Done ✓</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
