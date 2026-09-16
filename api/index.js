@@ -12,9 +12,12 @@ const JWT_SECRET = 'connect-apartment-secret-key-2026';
 // Middleware
 app.use(cors());
 app.use(express.json());
-// Serve static files
-app.use(express.static(path.join(__dirname, '..', 'public')));
-app.use('/admin-portal', express.static(path.join(__dirname, '..', 'admin-portal')));
+
+// Serve static files only when running locally (Vercel handles this via rewrites)
+if (!process.env.VERCEL) {
+  app.use(express.static(path.join(__dirname, '..', 'public')));
+  app.use('/admin-portal', express.static(path.join(__dirname, '..', 'admin-portal')));
+}
 
 // ============ IN-MEMORY DATABASE ============
 
@@ -487,10 +490,12 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Catch-all: serve resident portal
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
-});
+// Catch-all: serve resident portal (local only)
+if (!process.env.VERCEL) {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+  });
+}
 
 // Only listen when running locally (not on Vercel)
 if (!process.env.VERCEL) {
