@@ -1,23 +1,30 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const { v4: uuidv4 } = require('uuid');
+let app;
+try {
+  const express = require('express');
+  const cors = require('cors');
+  const path = require('path');
+  const bcrypt = require('bcryptjs');
+  const jwt = require('jsonwebtoken');
+  const { v4: uuidv4 } = require('uuid');
 
-const app = express();
-const PORT = 3000;
-const JWT_SECRET = 'connect-apartment-secret-key-2026';
+  app = express();
+  const PORT = 3000;
+  const JWT_SECRET = 'connect-apartment-secret-key-2026';
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+  // Middleware
+  app.use(cors());
+  app.use(express.json());
 
-// Serve static files only when running locally (Vercel handles this via rewrites)
-if (!process.env.VERCEL) {
-  app.use(express.static(path.join(__dirname, '..', 'public')));
-  app.use('/admin-portal', express.static(path.join(__dirname, '..', 'admin-portal')));
-}
+  // Health check - to verify the function is working
+  app.get('/api/health', (req, res) => {
+    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  });
+
+  // Serve static files only when running locally (Vercel handles this via rewrites)
+  if (!process.env.VERCEL) {
+    app.use(express.static(path.join(__dirname, '..', 'public')));
+    app.use('/admin-portal', express.static(path.join(__dirname, '..', 'admin-portal')));
+  }
 
 // ============ IN-MEMORY DATABASE ============
 
@@ -506,6 +513,19 @@ if (!process.env.VERCEL) {
     console.log('  ├─ jeeva  / jeeva@123');
     console.log('  └─ admin  / admin@123\n');
     console.log(`  Admin Portal: http://localhost:${PORT}/admin-portal\n`);
+  });
+}
+
+} catch (initError) {
+  // If anything fails during initialization, create a fallback app that shows the error
+  const express = require('express');
+  app = express();
+  app.use((req, res) => {
+    res.status(500).json({
+      error: 'Function initialization failed',
+      message: initError.message,
+      stack: initError.stack
+    });
   });
 }
 
