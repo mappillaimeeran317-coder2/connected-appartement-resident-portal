@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
@@ -11,6 +12,9 @@ const JWT_SECRET = 'connect-apartment-secret-key-2026';
 // Middleware
 app.use(cors());
 app.use(express.json());
+// Serve static files
+app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use('/admin-portal', express.static(path.join(__dirname, '..', 'admin-portal')));
 
 // ============ IN-MEMORY DATABASE ============
 
@@ -481,6 +485,11 @@ app.use((err, req, res, next) => {
     message: err.message,
     stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
   });
+});
+
+// Catch-all: serve resident portal
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 // Only listen when running locally (not on Vercel)
