@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/index.js" },
-    { "source": "/admin-portal/(.*)", "destination": "/admin-portal/$1" },
-    { "source": "/((?!api/|admin-portal/).*)", "destination": "/public/index.html" }
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "admin-portal/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/admin-portal/(.*)", "dest": "/admin-portal/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
